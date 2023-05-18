@@ -1,177 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Isotope layout</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="main.js"></script>
-    <script src="https://kit.fontawesome.com/bc8783f4e5.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>LOGO</h1>
-      <ul>
-        <li><a href="#"><i class="fab fa-square-twitter"></i>
-        <span>twitter</span></a></li>
-        <li><a href="#"><i class="fab fa-square-facebook"></i>
-        <span>facebook</span></a></li>
-        <li><a href="#"><i class="fas fa-envelope"></i>
-        <span>e-mail</span></a></li>
-      </ul>
-    </header>
+<html lang="ko">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotope layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="main.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 마크업을 손수 제작하는 예제, 예제의 목표는 layout의 종류의 이해와 플러그인을 사용하는 방법, 반응형제작, 클래스를 버튼으로 제어하여 sort하는 방법-->
+
+    <header>
+        <h1>LOGO</h1>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                    <span>facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-envelope"></i>
+                    <span>E-mail</span>
+                </a>
+            </li>
+        </ul>
+    </header>
     <main>
-      <ul>
-        <li class="on"><a href="#">All</a></li>
-        <li><a href="#">Odd</a></li>
-        <li><a href="#">Even</a></li>
-      </ul>
-      <section>
-        <!-- article*20>div>img[src="img/p$.jpg"]+h2>lorem4^p>lorem6 -->
-        <article class="odd">
-          <div>
-            <img src="img/p1.jpg" alt="">
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p2.jpg" alt="">
-            <h2>Tenetur fugit ipsam mollitia.</h2>
-            <p>Doloremque recusandae cum earum ratione velit!</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p3.jpg" alt="">
-            <h2>Autem vitae quod ipsa?</h2>
-            <p>At incidunt facere cupiditate corrupti. Vitae!</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p4.jpg" alt="">
-            <h2>Est magnam recusandae pariatur?</h2>
-            <p>Officia consequuntur sapiente rem quaerat quasi.</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p5.jpg" alt="">
-            <h2>Corrupti, quae. Consectetur, in!</h2>
-            <p>Asperiores voluptatem nulla officia obcaecati quam?</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p6.jpg" alt="">
-            <h2>Adipisci eum similique ipsam.</h2>
-            <p>Officia quaerat excepturi omnis vitae quia!</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p7.jpg" alt="">
-            <h2>Ratione aperiam vero eaque!</h2>
-            <p>Recusandae tempore hic odio voluptas? Quasi!</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p8.jpg" alt="">
-            <h2>Nemo eos non laborum.</h2>
-            <p>Architecto impedit suscipit dicta aut a!</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p9.jpg" alt="">
-            <h2>Veritatis tenetur est pariatur?</h2>
-            <p>Facilis assumenda incidunt sit enim veniam.</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p10.jpg" alt="">
-            <h2>Adipisci labore repellendus minima?</h2>
-            <p>Perferendis sunt exercitationem iste pariatur ipsa?</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p11.jpg" alt="">
-            <h2>Voluptatem minus consequatur provident.</h2>
-            <p>Incidunt dolorum officiis labore temporibus atque?</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p12.jpg" alt="">
-            <h2>Natus sequi quam labore?</h2>
-            <p>Nostrum eaque impedit sed error explicabo.</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p13.jpg" alt="">
-            <h2>Hic ab quam sequi?</h2>
-            <p>In, quis fuga. Esse, perferendis voluptatem?</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p14.jpg" alt="">
-            <h2>Quis impedit repellat aut!</h2>
-            <p>Voluptatibus laboriosam eligendi debitis? Dignissimos, beatae.</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p15.jpg" alt="">
-            <h2>Quod repellendus minima iure.</h2>
-            <p>A fuga libero odit magnam ipsam.</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p16.jpg" alt="">
-            <h2>Quos perferendis a dolores.</h2>
-            <p>Quae, laborum? Doloremque nam veritatis corrupti!</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p17.jpg" alt="">
-            <h2>Repellat fugiat sit animi.</h2>
-            <p>Amet assumenda sint fugit consectetur? Expedita.</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p18.jpg" alt="">
-            <h2>Est expedita eius dolor?</h2>
-            <p>Deserunt, fuga quam. Dolores, adipisci corporis.</p>
-          </div>
-        </article>
-        <article class="odd">
-          <div>
-            <img src="img/p19.jpg" alt="">
-            <h2>Sapiente hic mollitia placeat!</h2>
-            <p>Inventore, quia. Harum consequatur illum veniam!</p>
-          </div>
-        </article>
-        <article class="even">
-          <div>
-            <img src="img/p20.jpg" alt="">
-            <h2>Id omnis veritatis repellendus?</h2>
-            <p>Porro natus tenetur sunt est dolorem.</p>
-          </div>
-        </article>
-      </section>
+        <ul>
+            <li class="on"><a href="*">All</a></li>
+            <li><a href=".odd">Odd</a></li>
+            <li><a href=".even">Even</a></li>
+        </ul>
+        <section>
+            <!-- article*20>div>img[src="img/p$.jpg"]+h2>lorem4^p>lorem6 -->
+            <article class="odd">
+                <div>
+                    <img src="img/p1.jpg" alt="">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p2.jpg" alt="">
+                    <h2>Voluptates maiores quas saepe?</h2>
+                    <p>Libero rem eius non praesentium eos.</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p3.jpg" alt="">
+                    <h2>Nesciunt qui aperiam iure.</h2>
+                    <p>Alias, temporibus dolores! Exercitationem, ipsum delectus.</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p4.jpg" alt="">
+                    <h2>Ipsa ab delectus nemo!</h2>
+                    <p>Temporibus repellat velit veniam eligendi corrupti?</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p5.jpg" alt="">
+                    <h2>Maiores animi laboriosam quam!</h2>
+                    <p>Enim aliquam illo non animi recusandae.</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p6.jpg" alt="">
+                    <h2>Repudiandae quos maxime magni!</h2>
+                    <p>Repellat aut fugiat natus tempora reiciendis!</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p7.jpg" alt="">
+                    <h2>Sunt incidunt unde libero?</h2>
+                    <p>Officia at impedit voluptatibus recusandae repellendus!</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p8.jpg" alt="">
+                    <h2>Assumenda, dicta voluptates? Pariatur?</h2>
+                    <p>Eaque a officia consequuntur sapiente esse.</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p9.jpg" alt="">
+                    <h2>Repudiandae explicabo sint consequatur!</h2>
+                    <p>Tempore repudiandae illum fugit asperiores impedit!</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p10.jpg" alt="">
+                    <h2>Illum asperiores alias libero?</h2>
+                    <p>Dolor autem officiis veniam doloribus dolores!</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p11.jpg" alt="">
+                    <h2>Dolores beatae repellat temporibus!</h2>
+                    <p>Error ab quis nulla. Enim, et!</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p12.jpg" alt="">
+                    <h2>Ad sit soluta officia.</h2>
+                    <p>Dolorum voluptatum ab culpa et eaque.</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p13.jpg" alt="">
+                    <h2>Nulla provident nesciunt molestias?</h2>
+                    <p>Blanditiis, animi. Odit voluptas architecto nulla?</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p14.jpg" alt="">
+                    <h2>Soluta delectus magnam cum?</h2>
+                    <p>Esse delectus vel recusandae atque molestias!</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p15.jpg" alt="">
+                    <h2>Enim corporis porro ipsa?</h2>
+                    <p>Dolor at odio cupiditate ipsa necessitatibus.</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p16.jpg" alt="">
+                    <h2>Repellat, optio! Reiciendis, quas?</h2>
+                    <p>Officia aut fugiat placeat laudantium perspiciatis.</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p17.jpg" alt="">
+                    <h2>Itaque magni consequatur tenetur.</h2>
+                    <p>Itaque in rerum officia ducimus recusandae!</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p18.jpg" alt="">
+                    <h2>Est quaerat magni rem!</h2>
+                    <p>Laborum doloribus consectetur cupiditate modi est.</p>
+                </div>
+            </article>
+            <article class="odd">
+                <div>
+                    <img src="img/p19.jpg" alt="">
+                    <h2>Ipsum a voluptates sit?</h2>
+                    <p>Facere error libero blanditiis maiores cum?</p>
+                </div>
+            </article>
+            <article class="even">
+                <div>
+                    <img src="img/p20.jpg" alt="">
+                    <h2>Esse nostrum est in.</h2>
+                    <p>Quibusdam repellendus voluptates facilis quos. Harum?</p>
+                </div>
+            </article>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>
